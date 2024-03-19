@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login, Signup, Welcome } from './screen';
+import { Forget, Login, Signup, Welcome } from './screen';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -29,6 +29,13 @@ export default function App() {
             headerShown: false,
           }}
           component={Signup}
+        />
+        <Stack.Screen
+          name="forget"
+          options={{
+            headerShown: false,
+          }}
+          component={Forget}
         />
       </Stack.Navigator>
     </NavigationContainer>

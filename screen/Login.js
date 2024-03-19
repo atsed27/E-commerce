@@ -15,7 +15,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import Button from '../components/Button';
 
-const Signup = ({ navigation }) => {
+const Login = ({ navigation }) => {
   const [isPasswordShown, setIsPasswordShown] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   return (
@@ -68,7 +68,7 @@ const Signup = ({ navigation }) => {
               </View>
             </View>
             <TouchableOpacity
-              onPress={() => navigation.navigate('login')}
+              onPress={() => navigation.navigate('forget')}
               style={styles.AlText}
             >
               <Text>Forget your Password </Text>
@@ -116,7 +116,7 @@ const Signup = ({ navigation }) => {
   );
 };
 
-export default Signup;
+export default Login;
 
 const styles = StyleSheet.create({
   container: {
