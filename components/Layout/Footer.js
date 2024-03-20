@@ -22,7 +22,7 @@ const Footer = () => {
           {router.name === 'home' ? (
             <Entypo name="home" size={30} color={COLORS.primary} />
           ) : (
-            <AntDesign name="home" size={30} color="white" />
+            <AntDesign name="home" size={30} color="black" />
           )}
           <Text style={[router.name === 'home' && { color: COLORS.primary }]}>
             Home
@@ -33,7 +33,11 @@ const Footer = () => {
           onPress={() => navigation.navigate('shop')}
         >
           {router.name === 'shop' ? (
-            <MaterialIcons name="shopping-cart" size={30} color="black" />
+            <MaterialIcons
+              name="shopping-cart"
+              size={30}
+              color={COLORS.primary}
+            />
           ) : (
             <AntDesign name="shoppingcart" size={30} color="black" />
           )}
