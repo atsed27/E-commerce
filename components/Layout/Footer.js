@@ -15,7 +15,10 @@ const Footer = () => {
   return (
     <View style={styles.container}>
       <View style={styles.IconsContainer}>
-        <TouchableOpacity onPress={() => navigation.navigate('home')}>
+        <TouchableOpacity
+          style={{ alignItems: 'center' }}
+          onPress={() => navigation.navigate('home')}
+        >
           {router.name === 'home' ? (
             <Entypo name="home" size={30} color={COLORS.primary} />
           ) : (
@@ -25,7 +28,10 @@ const Footer = () => {
             Home
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('shop')}>
+        <TouchableOpacity
+          style={{ alignItems: 'center' }}
+          onPress={() => navigation.navigate('shop')}
+        >
           {router.name === 'shop' ? (
             <MaterialIcons name="shopping-cart" size={30} color="black" />
           ) : (
@@ -36,7 +42,10 @@ const Footer = () => {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('bag')}>
+        <TouchableOpacity
+          style={{ alignItems: 'center' }}
+          onPress={() => navigation.navigate('bag')}
+        >
           {router.name === 'bag' ? (
             <Ionicons
               name="bag-handle-sharp"
@@ -50,7 +59,10 @@ const Footer = () => {
             Bag
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('favorite')}>
+        <TouchableOpacity
+          style={{ alignItems: 'center' }}
+          onPress={() => navigation.navigate('favorite')}
+        >
           {router.name === 'favorite' ? (
             <MaterialIcons name="favorite" size={30} color={COLORS.primary} />
           ) : (
@@ -62,7 +74,10 @@ const Footer = () => {
             Favorite
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('user')}>
+        <TouchableOpacity
+          style={{ alignItems: 'center' }}
+          onPress={() => navigation.navigate('user')}
+        >
           {router.name === 'user' ? (
             <FontAwesome name="user" size={30} color={COLORS.primary} />
           ) : (
