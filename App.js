@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
   Bag,
+  Catalog,
   Favorite,
   Forget,
   Home,
@@ -82,6 +83,13 @@ export default function App() {
             headerShown: false,
           }}
           component={User}
+        />
+        <Stack.Screen
+          name="catalog"
+          options={{
+            headerShown: false,
+          }}
+          component={Catalog}
         />
       </Stack.Navigator>
     </NavigationContainer>

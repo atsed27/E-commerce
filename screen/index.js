@@ -6,5 +6,6 @@ import Home from './Home';
 import Bag from './Bag';
 import Favorite from './Favorite';
 import User from './User';
+import Catalog from './Catalog';
 
-export { Login, Signup, Welcome, Forget, Home, Bag, Favorite, User };
+export { Login, Signup, Welcome, Forget, Home, Bag, Favorite, User, Catalog };

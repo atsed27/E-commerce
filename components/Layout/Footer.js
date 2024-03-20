@@ -11,7 +11,6 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 const Footer = () => {
   const router = useRoute();
   const navigation = useNavigation();
-
   return (
     <View style={styles.container}>
       <View style={styles.IconsContainer}>
@@ -32,7 +31,7 @@ const Footer = () => {
           style={{ alignItems: 'center' }}
           onPress={() => navigation.navigate('shop')}
         >
-          {router.name === 'shop' ? (
+          {router.name === 'shop' || router.name === 'catalog' ? (
             <MaterialIcons
               name="shopping-cart"
               size={30}

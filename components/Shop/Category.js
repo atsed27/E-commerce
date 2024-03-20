@@ -77,12 +77,15 @@ const Category = () => {
       </View>
       <View style={styles.ListContainer}>
         <View style={styles.List}>
-          <View style={styles.oneList}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('catalog')}
+            style={styles.oneList}
+          >
             <Text style={{ fontSize: 18, fontWeight: '700', paddingLeft: 20 }}>
               New
             </Text>
             <Image source={require('../../assets/shop/image 4.1.png')} />
-          </View>
+          </TouchableOpacity>
         </View>
         <View style={styles.List}>
           <View style={styles.oneList}>
