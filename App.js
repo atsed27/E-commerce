@@ -2,7 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Forget, Home, Login, Signup, Welcome } from './screen';
+import {
+  Bag,
+  Favorite,
+  Forget,
+  Home,
+  Login,
+  Signup,
+  User,
+  Welcome,
+} from './screen';
+import Shop from './screen/Shop';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -43,6 +53,35 @@ export default function App() {
             headerShown: false,
           }}
           component={Forget}
+        />
+        <Stack.Screen
+          name="shop"
+          options={{
+            headerShown: false,
+          }}
+          component={Shop}
+        />
+        <Stack.Screen
+          name="bag"
+          options={{
+            headerShown: false,
+          }}
+          component={Bag}
+        />
+        <Stack.Screen
+          name="favorite"
+          options={{
+            headerShown: false,
+          }}
+          component={Favorite}
+        />
+
+        <Stack.Screen
+          name="user"
+          options={{
+            headerShown: false,
+          }}
+          component={User}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -4,16 +4,19 @@ import React from 'react';
 import New from '../components/New';
 import Popular from '../components/Popular';
 import HomTop from '../components/HomTop';
+import Layout from '../components/Layout/Layout';
 
 const Home = ({ navigation }) => {
   return (
-    <ScrollView>
-      <HomTop />
-      <View style={styles.Bottom}>
-        <New />
-        <Popular />
-      </View>
-    </ScrollView>
+    <Layout>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <HomTop />
+        <View style={styles.Bottom}>
+          <New />
+          <Popular />
+        </View>
+      </ScrollView>
+    </Layout>
   );
 };
 

@@ -3,4 +3,8 @@ import Signup from './Signup';
 import Welcome from './Welcome';
 import Forget from './Forget';
 import Home from './Home';
-export { Login, Signup, Welcome, Forget, Home };
+import Bag from './Bag';
+import Favorite from './Favorite';
+import User from './User';
+
+export { Login, Signup, Welcome, Forget, Home, Bag, Favorite, User };
