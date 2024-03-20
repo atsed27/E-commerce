@@ -9,7 +9,10 @@ import {
 import React from 'react';
 import COLORS from '../constance/Color';
 import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+
 const New = () => {
+  const navigation = useNavigation();
   return (
     <>
       <View
@@ -32,7 +35,10 @@ const New = () => {
         </View>
       </View>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        <View style={styles.newImgContainer}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('product')}
+          style={styles.newImgContainer}
+        >
           <View>
             <ImageBackground
               style={styles.newImg}
@@ -120,8 +126,7 @@ const New = () => {
               </View>
             </View>
           </View>
-        </View>
-
+        </TouchableOpacity>
         <View style={styles.newImgContainer}>
           <View>
             <ImageBackground

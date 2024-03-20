@@ -15,7 +15,7 @@ import ListProduct from '../components/ListProduct';
 const Catalog = () => {
   return (
     <Layout>
-      <ScrollView showsHorizontalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.Top}>
           <View style={styles.TopC}>
             <TouchableOpacity>

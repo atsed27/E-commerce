@@ -9,6 +9,7 @@ import {
   Forget,
   Home,
   Login,
+  Product,
   Signup,
   User,
   Welcome,
@@ -90,6 +91,13 @@ export default function App() {
             headerShown: false,
           }}
           component={Catalog}
+        />
+        <Stack.Screen
+          name="product"
+          options={{
+            headerShown: false,
+          }}
+          component={Product}
         />
       </Stack.Navigator>
     </NavigationContainer>

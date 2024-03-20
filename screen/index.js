@@ -7,5 +7,17 @@ import Bag from './Bag';
 import Favorite from './Favorite';
 import User from './User';
 import Catalog from './Catalog';
+import Product from './Product';
 
-export { Login, Signup, Welcome, Forget, Home, Bag, Favorite, User, Catalog };
+export {
+  Login,
+  Signup,
+  Welcome,
+  Forget,
+  Home,
+  Bag,
+  Favorite,
+  User,
+  Catalog,
+  Product,
+};
