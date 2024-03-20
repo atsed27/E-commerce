@@ -42,7 +42,7 @@ const New = () => {
           <View>
             <ImageBackground
               style={styles.newImg}
-              source={require('../assets/Big Banner.png')}
+              source={require('../assets/product/image(3).png')}
             >
               <View style={styles.overlay2}>
                 <Text

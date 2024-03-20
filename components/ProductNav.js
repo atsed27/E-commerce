@@ -3,7 +3,10 @@ import React from 'react';
 import { AntDesign } from '@expo/vector-icons';
 import COLORS from '../constance/Color';
 import { Entypo } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+
 const ProductNav = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <View style={styles.Top}>
