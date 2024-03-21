@@ -10,6 +10,7 @@ import {
   Home,
   Login,
   Product,
+  RatingAndReviews,
   Signup,
   User,
   Welcome,
@@ -98,6 +99,13 @@ export default function App() {
             headerShown: false,
           }}
           component={Product}
+        />
+        <Stack.Screen
+          name="ra&re"
+          options={{
+            headerShown: false,
+          }}
+          component={RatingAndReviews}
         />
       </Stack.Navigator>
     </NavigationContainer>

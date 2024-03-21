@@ -14,7 +14,7 @@ import ProductSlider from '../components/ProductSlider';
 import { AntDesign } from '@expo/vector-icons';
 import COLORS from '../constance/Color';
 
-const Product = () => {
+const Product = ({ navigation }) => {
   const [size, setSize] = useState(false);
   const [color, setColor] = useState(false);
   const [sizeVal, setSizeVal] = useState('Size');
@@ -96,7 +96,7 @@ const Product = () => {
           <View>
             <Text style={{ fontWeight: '100' }}>Short black dress</Text>
             <View style={{ flexDirection: 'row' }}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => navigation.navigate('ra&re')}>
                 <AntDesign
                   style={{ marginRight: 2 }}
                   name="star"

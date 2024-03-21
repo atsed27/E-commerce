@@ -8,6 +8,7 @@ import Favorite from './Favorite';
 import User from './User';
 import Catalog from './Catalog';
 import Product from './Product';
+import RatingAndReviews from './RaAndRe';
 
 export {
   Login,
@@ -20,4 +21,5 @@ export {
   User,
   Catalog,
   Product,
+  RatingAndReviews,
 };
