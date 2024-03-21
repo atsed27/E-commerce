@@ -87,7 +87,7 @@ const Footer = () => {
             <FontAwesome name="user-o" size={30} color="black" />
           )}
           <Text style={[router.name === 'user' && { color: COLORS.primary }]}>
-            User
+            Profile
           </Text>
         </TouchableOpacity>
       </View>
