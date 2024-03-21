@@ -72,7 +72,9 @@ const Catalog = () => {
           </View>
         </View>
 
-        <ListProduct />
+        <ListProduct
+          icon={<AntDesign name="heart" size={24} color={COLORS.primary} />}
+        />
       </ScrollView>
     </Layout>
   );
