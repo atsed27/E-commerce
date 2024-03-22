@@ -154,7 +154,9 @@ const Bag = () => {
             Total amount:
           </Text>
 
-          <Text style={{ fontSize: 18, fontWeight: 'bold' }}>$51</Text>
+          <Text style={{ fontSize: 18, fontWeight: 'bold' }}>
+            ${quantity * 51}
+          </Text>
         </View>
 
         <TouchableOpacity

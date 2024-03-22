@@ -156,7 +156,10 @@ const Product = ({ navigation }) => {
               front and a wide,frill-trimmed
             </Text>
           </View>
-          <TouchableOpacity style={styles.buttonCon}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('bag')}
+            style={styles.buttonCon}
+          >
             <View style={styles.Button}>
               <Text
                 style={{ fontWeight: '500', fontSize: 17, color: COLORS.white }}

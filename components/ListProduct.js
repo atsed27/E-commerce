@@ -2,11 +2,15 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import { AntDesign } from '@expo/vector-icons';
 import COLORS from '../constance/Color';
+import { useNavigation } from '@react-navigation/native';
+
 const ListProduct = ({ icon }) => {
+  const navigation = useNavigation();
+
   return (
     <View style={{ marginTop: 20, marginBottom: 70, marginHorizontal: 20 }}>
       <View style={styles.container}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('product')}>
           <Image source={require('../assets/shop/photo.png')} />
         </TouchableOpacity>
         <View style={{ marginHorizontal: 10 }}>
@@ -18,7 +22,7 @@ const ListProduct = ({ icon }) => {
               width: '82.5%',
             }}
           >
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('product')}>
               <Text style={{ fontSize: 18, fontWeight: '600' }}>PullOver</Text>
               <Text style={{ fontWeight: '200' }}>dani</Text>
               <View style={{ flexDirection: 'row', marginTop: 8 }}>
