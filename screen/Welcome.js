@@ -10,7 +10,7 @@ const Welcome = ({ navigation }) => {
       style={{
         flex: 1,
       }}
-      colors={[COLORS.secondary, COLORS.primary]}
+      colors={[COLORS.primary, COLORS.secondary]}
     >
       <View style={{ flex: 1 }}>
         <View>
@@ -119,7 +119,7 @@ const Welcome = ({ navigation }) => {
                 marginVertical: 4,
               }}
             >
-              Connect with each other with chatting
+              Connect with each other with ገቢያ
             </Text>
             <Text
               style={{
@@ -127,7 +127,7 @@ const Welcome = ({ navigation }) => {
                 color: COLORS.white,
               }}
             >
-              Calling, Enjoy Safe and private texting
+              Shopping, Enjoy Safe and private ordering items
             </Text>
           </View>
 

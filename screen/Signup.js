@@ -67,7 +67,7 @@ const Signup = ({ navigation }) => {
                       right: 12,
                     }}
                   >
-                    {isPasswordShown == true ? (
+                    {!isPasswordShown == true ? (
                       <FontAwesome5 name="eye" size={24} color="black" />
                     ) : (
                       <FontAwesome5 name="eye-slash" size={24} color="black" />
@@ -84,6 +84,7 @@ const Signup = ({ navigation }) => {
               <AntDesign name="question" size={24} color="black" />
             </TouchableOpacity>
             <Button
+              onPress={() => navigation.navigate('login')}
               title="Sign Up"
               filled
               style={{
@@ -93,7 +94,9 @@ const Signup = ({ navigation }) => {
             />
           </View>
           <View style={styles.Bottom}>
-            <Text style={styles.BottomText}>Or login with social account </Text>
+            <Text style={styles.BottomText}>
+              Or Sign up with social account{' '}
+            </Text>
             <View style={styles.social}>
               <TouchableOpacity style={styles.FB}>
                 <Image

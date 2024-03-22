@@ -75,6 +75,7 @@ const Login = ({ navigation }) => {
               <AntDesign name="arrowright" size={24} color={COLORS.primary} />
             </TouchableOpacity>
             <Button
+              onPress={() => navigation.navigate('home')}
               title="LogIn"
               filled
               style={{
@@ -84,7 +85,7 @@ const Login = ({ navigation }) => {
             />
           </View>
           <View style={styles.Bottom}>
-            <Text style={styles.BottomText}>Or sign up with social </Text>
+            <Text style={styles.BottomText}>Or log in with social </Text>
             <View style={styles.social}>
               <TouchableOpacity style={styles.FB}>
                 <Image
