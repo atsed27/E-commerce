@@ -30,9 +30,9 @@ const New = () => {
           </Text>
         </View>
 
-        <View>
-          <Text style={{ fontSize: 19 }}>View all</Text>
-        </View>
+        <TouchableOpacity>
+          <Text style={{ fontSize: 16 }}>View all</Text>
+        </TouchableOpacity>
       </View>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <TouchableOpacity
@@ -109,13 +109,13 @@ const New = () => {
             </View>
             <View>
               <Text style={{ fontSize: 16, fontWeight: '200' }}>Sitlly</Text>
-              <Text style={{ fontSize: 24, fontWeight: '600' }}>
+              <Text style={{ fontSize: 20, fontWeight: '600' }}>
                 Sport Dress
               </Text>
               <View style={{ flexDirection: 'row' }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: 18,
                     textDecorationLine: 'line-through',
                     marginRight: 5,
                   }}
@@ -127,11 +127,15 @@ const New = () => {
             </View>
           </View>
         </TouchableOpacity>
-        <View style={styles.newImgContainer}>
+
+        <TouchableOpacity
+          onPress={() => navigation.navigate('product')}
+          style={styles.newImgContainer}
+        >
           <View>
             <ImageBackground
               style={styles.newImg}
-              source={require('../assets/Big Banner.png')}
+              source={require('../assets/product/image(3) (1).png')}
             >
               <View style={styles.overlay2}>
                 <Text
@@ -198,29 +202,33 @@ const New = () => {
             </View>
             <View>
               <Text style={{ fontSize: 16, fontWeight: '200' }}>Sitlly</Text>
-              <Text style={{ fontSize: 24, fontWeight: '600' }}>
-                Sport Dress
+              <Text style={{ fontSize: 20, fontWeight: '600' }}>
+                Man hoodies
               </Text>
               <View style={{ flexDirection: 'row' }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: 18,
                     textDecorationLine: 'line-through',
                     marginRight: 5,
                   }}
                 >
-                  15$
+                  35$
                 </Text>
-                <Text style={{ fontSize: 20, color: COLORS.primary }}>12$</Text>
+                <Text style={{ fontSize: 20, color: COLORS.primary }}>22$</Text>
               </View>
             </View>
           </View>
-        </View>
-        <View style={styles.newImgContainer}>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => navigation.navigate('product')}
+          style={styles.newImgContainer}
+        >
           <View>
             <ImageBackground
               style={styles.newImg}
-              source={require('../assets/Big Banner.png')}
+              source={require('../assets/product/image(4).png')}
             >
               <View style={styles.overlay2}>
                 <Text
@@ -287,13 +295,13 @@ const New = () => {
             </View>
             <View>
               <Text style={{ fontSize: 16, fontWeight: '200' }}>Sitlly</Text>
-              <Text style={{ fontSize: 24, fontWeight: '600' }}>
+              <Text style={{ fontSize: 20, fontWeight: '600' }}>
                 Sport Dress
               </Text>
               <View style={{ flexDirection: 'row' }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: 18,
                     textDecorationLine: 'line-through',
                     marginRight: 5,
                   }}
@@ -304,96 +312,7 @@ const New = () => {
               </View>
             </View>
           </View>
-        </View>
-        <View style={styles.newImgContainer}>
-          <View>
-            <ImageBackground
-              style={styles.newImg}
-              source={require('../assets/Big Banner.png')}
-            >
-              <View style={styles.overlay2}>
-                <Text
-                  style={{
-                    backgroundColor: COLORS.black,
-                    color: COLORS.white,
-                    paddingHorizontal: 10,
-                    paddingVertical: 3,
-                    borderRadius: 10,
-                  }}
-                >
-                  NEW
-                </Text>
-              </View>
-            </ImageBackground>
-            <TouchableOpacity style={styles.overlay3}>
-              <AntDesign name="hearto" size={24} color={COLORS.white} />
-            </TouchableOpacity>
-          </View>
-          <View style={styles.des}>
-            <View style={{ flex: 1, flexDirection: 'row' }}>
-              <TouchableOpacity>
-                <AntDesign
-                  style={{ marginRight: 2 }}
-                  name="staro"
-                  size={20}
-                  color="black"
-                />
-              </TouchableOpacity>
-              <TouchableOpacity>
-                <AntDesign
-                  style={{ marginRight: 2 }}
-                  name="staro"
-                  size={20}
-                  color="black"
-                />
-              </TouchableOpacity>
-              <TouchableOpacity>
-                <AntDesign
-                  style={{ marginRight: 2 }}
-                  name="staro"
-                  size={20}
-                  color="black"
-                />
-              </TouchableOpacity>
-              <TouchableOpacity>
-                <AntDesign
-                  style={{ marginRight: 2 }}
-                  name="staro"
-                  size={20}
-                  color="black"
-                />
-              </TouchableOpacity>
-              <TouchableOpacity>
-                <AntDesign
-                  style={{ marginRight: 2 }}
-                  name="staro"
-                  size={20}
-                  color="black"
-                />
-              </TouchableOpacity>
-
-              <Text style={{ fontSize: 18 }}>(0)</Text>
-            </View>
-            <View>
-              <Text style={{ fontSize: 16, fontWeight: '200' }}>Sitlly</Text>
-              <Text style={{ fontSize: 24, fontWeight: '600' }}>
-                Sport Dress
-              </Text>
-              <View style={{ flexDirection: 'row' }}>
-                <Text
-                  style={{
-                    fontSize: 20,
-                    textDecorationLine: 'line-through',
-                    marginRight: 5,
-                  }}
-                >
-                  15$
-                </Text>
-                <Text style={{ fontSize: 20, color: COLORS.primary }}>12$</Text>
-              </View>
-            </View>
-          </View>
-        </View>
+        </TouchableOpacity>
       </ScrollView>
     </>
   );
@@ -431,6 +350,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   des: {
-    marginTop: 10,
+    marginTop: 15,
   },
 });
