@@ -44,7 +44,8 @@ const User = ({ navigation }) => {
 
         <View style={{ marginHorizontal: 20, marginTop: 20 }}>
           <View style={{ marginBottom: 20 }}>
-            <View
+            <TouchableOpacity
+              onPress={() => navigation.navigate('order')}
               style={{
                 flexDirection: 'row',
                 justifyContent: 'space-between',
@@ -60,7 +61,7 @@ const User = ({ navigation }) => {
                 <Text style={{ color: '#9B9B9B' }}>Already 12 orders</Text>
               </View>
               <Octicons name="chevron-right" size={24} color="#9B9B9B" />
-            </View>
+            </TouchableOpacity>
             <View style={{ borderWidth: 0.13, marginTop: 12 }} />
           </View>
 

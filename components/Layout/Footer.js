@@ -81,7 +81,7 @@ const Footer = () => {
           style={{ alignItems: 'center' }}
           onPress={() => navigation.navigate('user')}
         >
-          {router.name === 'user' ? (
+          {router.name === 'user' || router.name === 'order' ? (
             <FontAwesome name="user" size={30} color={COLORS.primary} />
           ) : (
             <FontAwesome name="user-o" size={30} color="black" />
@@ -99,7 +99,7 @@ export default Footer;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#C2BFBF',
     paddingVertical: 4,
     position: 'absolute',
     bottom: 0,

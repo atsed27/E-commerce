@@ -9,6 +9,7 @@ import {
   Forget,
   Home,
   Login,
+  Order,
   Product,
   RatingAndReviews,
   Setting,
@@ -115,6 +116,14 @@ export default function App() {
             headerShown: false,
           }}
           component={Setting}
+        />
+
+        <Stack.Screen
+          name="order"
+          options={{
+            headerShown: false,
+          }}
+          component={Order}
         />
       </Stack.Navigator>
     </NavigationContainer>

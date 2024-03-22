@@ -11,7 +11,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import COLORS from '../constance/Color';
 import { EvilIcons, AntDesign } from '@expo/vector-icons';
 
-const Setting = () => {
+const Setting = ({ navigation }) => {
   const [sellBool, setSellBoll] = useState(false);
   const [newArrive, setNewArrive] = useState(false);
   const [change, setChange] = useState(false);
