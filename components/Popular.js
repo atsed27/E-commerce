@@ -11,7 +11,7 @@ import COLORS from '../constance/Color';
 import { AntDesign } from '@expo/vector-icons';
 const Popular = () => {
   return (
-    <View style={{ marginTop: 30 }}>
+    <View style={{ marginTop: 30, marginBottom: 60 }}>
       <View
         style={{
           flex: 1,
@@ -63,7 +63,7 @@ const Popular = () => {
                   style={{ marginRight: 2 }}
                   name="star"
                   size={20}
-                  color="yellow"
+                  color="#FFBA49"
                 />
               </TouchableOpacity>
               <TouchableOpacity>
@@ -71,7 +71,7 @@ const Popular = () => {
                   style={{ marginRight: 2 }}
                   name="star"
                   size={20}
-                  color="yellow"
+                  color="#FFBA49"
                 />
               </TouchableOpacity>
               <TouchableOpacity>
@@ -79,7 +79,7 @@ const Popular = () => {
                   style={{ marginRight: 2 }}
                   name="star"
                   size={20}
-                  color="yellow"
+                  color="#FFBA49"
                 />
               </TouchableOpacity>
               <TouchableOpacity>
@@ -87,29 +87,27 @@ const Popular = () => {
                   style={{ marginRight: 2 }}
                   name="star"
                   size={20}
-                  color="yellow"
+                  color="#FFBA49"
                 />
               </TouchableOpacity>
               <TouchableOpacity>
                 <AntDesign
                   style={{ marginRight: 2 }}
-                  name="star"
+                  name="staro"
                   size={20}
-                  color="yellow"
+                  color="#000"
                 />
               </TouchableOpacity>
 
-              <Text style={{ fontSize: 18 }}>(10)</Text>
+              <Text style={{ fontSize: 18 }}>(8.5)</Text>
             </View>
             <View>
               <Text style={{ fontSize: 16, fontWeight: '200' }}>Sitlly</Text>
-              <Text style={{ fontSize: 24, fontWeight: '600' }}>
-                Sport Dress
-              </Text>
+              <Text style={{ fontSize: 20, fontWeight: '600' }}>classic</Text>
               <View style={{ flexDirection: 'row' }}>
                 <Text
                   style={{
-                    fontSize: 20,
+                    fontSize: 18,
                     textDecorationLine: 'line-through',
                     marginRight: 5,
                   }}
@@ -121,6 +119,98 @@ const Popular = () => {
             </View>
           </View>
         </View>
+
+        <TouchableOpacity
+          onPress={() => navigation.navigate('product')}
+          style={styles.newImgContainer}
+        >
+          <View>
+            <ImageBackground
+              style={styles.newImg}
+              source={require('../assets/product/man.png')}
+            >
+              <View style={styles.overlay2}>
+                <Text
+                  style={{
+                    backgroundColor: COLORS.primary,
+                    color: COLORS.white,
+                    paddingHorizontal: 10,
+                    paddingVertical: 3,
+                    borderRadius: 10,
+                  }}
+                >
+                  -15%
+                </Text>
+              </View>
+            </ImageBackground>
+            <TouchableOpacity style={styles.overlay3}>
+              <AntDesign name="heart" size={24} color={COLORS.primary} />
+            </TouchableOpacity>
+          </View>
+          <View style={styles.des}>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <TouchableOpacity>
+                <AntDesign
+                  style={{ marginRight: 2 }}
+                  name="star"
+                  size={20}
+                  color="#FFBA49"
+                />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <AntDesign
+                  style={{ marginRight: 2 }}
+                  name="star"
+                  size={20}
+                  color="#FFBA49"
+                />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <AntDesign
+                  style={{ marginRight: 2 }}
+                  name="star"
+                  size={20}
+                  color="#FFBA49"
+                />
+              </TouchableOpacity>
+
+              <TouchableOpacity>
+                <AntDesign
+                  style={{ marginRight: 2 }}
+                  name="staro"
+                  size={20}
+                  color="black"
+                />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <AntDesign
+                  style={{ marginRight: 2 }}
+                  name="staro"
+                  size={20}
+                  color="black"
+                />
+              </TouchableOpacity>
+
+              <Text style={{ fontSize: 18 }}>(8)</Text>
+            </View>
+            <View>
+              <Text style={{ fontSize: 16, fontWeight: '200' }}>Sitlly</Text>
+              <Text style={{ fontSize: 20, fontWeight: '600' }}>T-shirt</Text>
+              <View style={{ flexDirection: 'row' }}>
+                <Text
+                  style={{
+                    fontSize: 18,
+                    textDecorationLine: 'line-through',
+                    marginRight: 5,
+                  }}
+                >
+                  25$
+                </Text>
+                <Text style={{ fontSize: 20, color: COLORS.primary }}>20$</Text>
+              </View>
+            </View>
+          </View>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -130,7 +220,7 @@ export default Popular;
 
 const styles = StyleSheet.create({
   NewText: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
   },
   newImgContainer: {

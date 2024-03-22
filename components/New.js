@@ -322,7 +322,7 @@ export default New;
 
 const styles = StyleSheet.create({
   NewText: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
   },
   newImgContainer: {
