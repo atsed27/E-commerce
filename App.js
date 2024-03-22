@@ -12,6 +12,7 @@ import {
   Order,
   Product,
   RatingAndReviews,
+  Search,
   Setting,
   Signup,
   User,
@@ -124,6 +125,14 @@ export default function App() {
             headerShown: false,
           }}
           component={Order}
+        />
+
+        <Stack.Screen
+          name="search"
+          options={{
+            headerShown: false,
+          }}
+          component={Search}
         />
       </Stack.Navigator>
     </NavigationContainer>

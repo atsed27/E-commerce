@@ -26,7 +26,7 @@ const Category = () => {
             />
           </TouchableOpacity>
           <Text style={{ fontSize: 18, fontWeight: '500' }}>Categories</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('search')}>
             <EvilIcons name="search" size={30} color="black" />
           </TouchableOpacity>
         </View>

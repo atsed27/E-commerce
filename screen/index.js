@@ -11,6 +11,8 @@ import Product from './Product';
 import RatingAndReviews from './RaAndRe';
 import Setting from './Setting';
 import Order from './Order';
+import Search from './Search';
+
 export {
   Login,
   Signup,
@@ -25,4 +27,5 @@ export {
   RatingAndReviews,
   Setting,
   Order,
+  Search,
 };
