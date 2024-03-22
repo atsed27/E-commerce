@@ -11,6 +11,7 @@ import {
   Login,
   Product,
   RatingAndReviews,
+  Setting,
   Signup,
   User,
   Welcome,
@@ -106,6 +107,14 @@ export default function App() {
             headerShown: false,
           }}
           component={RatingAndReviews}
+        />
+
+        <Stack.Screen
+          name="setting"
+          options={{
+            headerShown: false,
+          }}
+          component={Setting}
         />
       </Stack.Navigator>
     </NavigationContainer>

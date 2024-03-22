@@ -7,13 +7,11 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import COLORS from '../constance/Color';
-import { AntDesign } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import Layout from '../components/Layout/Layout';
 
-const User = () => {
+const User = ({ navigation }) => {
   return (
     <Layout>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -131,7 +129,10 @@ const User = () => {
             <View style={{ borderWidth: 0.13, marginTop: 12 }} />
           </View>
 
-          <View style={{ marginBottom: 20 }}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('setting')}
+            style={{ marginBottom: 20 }}
+          >
             <View
               style={{
                 flexDirection: 'row',
@@ -150,7 +151,7 @@ const User = () => {
               <Octicons name="chevron-right" size={24} color="#9B9B9B" />
             </View>
             <View style={{ borderWidth: 0.13, marginTop: 12 }} />
-          </View>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </Layout>

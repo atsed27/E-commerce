@@ -9,6 +9,7 @@ import User from './User';
 import Catalog from './Catalog';
 import Product from './Product';
 import RatingAndReviews from './RaAndRe';
+import Setting from './Setting';
 export {
   Login,
   Signup,
@@ -21,4 +22,5 @@ export {
   Catalog,
   Product,
   RatingAndReviews,
+  Setting
 };
